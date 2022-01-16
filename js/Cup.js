@@ -1,49 +1,17 @@
 class Cup{
-    constructor(name, description, value, materials, weight){
+    constructor(name, description, value){
         this.name = name;
         this.description = description;
         this.value = value;
-        this.materials = materials;
-        this.weight = weight;
+        this.champions = [];
     }
 
-    getName(){
-        return this.name;
-    }
-
-    setName(name){
-        this.name = name;
-    }
-
-    getDescription(){
-        return this.description;
-    }
-
-    setDescription(description){
-        this.description = description;
-    }
-
-    getValue(){
-        return this.value;
-    }
-
-    setValue(value){
-        this.value = value;
-    }
-
-    getMaterials(){
-        return this.materials;
-    }
-
-    setMaterials(materials){
-        this.materials = materials;
-    }
-
-    getWeight(){
-        return this.weight;
-    }
-
-    setWeight(weight){
-        this.weight = weight;
+    //Funcion de prueba
+    addChampion(newChampion, year){
+        const obj = {
+            name: newChampion,
+            year: year
+        };
+        this.champions.push(obj);
     }
 }
